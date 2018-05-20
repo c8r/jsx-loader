@@ -1,6 +1,6 @@
 {
   "name": "@compositor/jsx-loader",
-  "version": "1.0.0-1",
+  "version": "1.0.0-2",
   "description": "Webpack loader for Compositor JSX",
   "main": "index.js",
   "scripts": {
