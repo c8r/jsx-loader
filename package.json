@@ -24,5 +24,16 @@
     "gray-matter": "^4.0.1",
     "loader-utils": "^1.1.0",
     "stringify-object": "^3.2.2"
-  }
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c8r/jsx-loader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/c8r/jsx-loader/issues"
+  },
+  "homepage": "https://github.com/c8r/jsx-loader#readme"
 }
