@@ -33,9 +33,9 @@ module.exports = async function(src) {
     \`
   )(React, ...values)
 
-  export const jsx = \`
-    ${content}
-  \`
+  export const jsx = \`${content}\`
+
+  export { scope }
 
   Component.defaultProps = ${stringifyObject(data)}
 
