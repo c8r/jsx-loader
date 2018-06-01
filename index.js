@@ -3,6 +3,9 @@ const buble = require('buble')
 const matter = require('gray-matter')
 const stringifyObject = require('stringify-object')
 
+const escapeTemplateString = code =>
+  code.replace(/`/g, '\\`').replace(/\$/g, '\\$')
+
 module.exports = async function(src) {
   const callback = this.async()
   const opts = getOptions(this)
@@ -33,7 +36,7 @@ module.exports = async function(src) {
     \`
   )(React, ...values)
 
-  export const jsx = \`${content}\`
+  export const jsx = \`${escapeTemplateString(content)}\`
 
   export { scope }
 

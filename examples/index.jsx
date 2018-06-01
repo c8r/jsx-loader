@@ -5,7 +5,7 @@ title: Hello
   <h1>Compositor JSX</h1>
   <ul>
     <li>
-      <Link to='/'>Home</Link>
+      <Link to={`/?title=${props.title}`}>Home</Link>
     </li>
     <li>
       <Link to='/scoped'>Scoped with front matter import</Link>
