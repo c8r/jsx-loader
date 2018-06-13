@@ -14,7 +14,10 @@ npm i @compositor/jsx-loader
     rules: [
       {
         test: /\.jsx$/,
-        loader: '@compositor/jsx-loader'
+        use: [
+          'babel-loader',
+          '@compositor/jsx-loader'
+        ]
       }
     ]
   }
@@ -76,10 +79,15 @@ Or specified as a loader option in webpack configuration:
     rules: [
       {
         test: /\.jsx$/,
-        loader: '@compositor/jsx-loader',
-        options: {
-          scope: `import scope from './scope'`
-        }
+        use: [
+          'babel-loader',
+          {
+            loader: '@compositor/jsx-loader',
+            options: {
+              scope: `import scope from './scope'`
+            }
+          }
+        ]
       }
     ]
   }
